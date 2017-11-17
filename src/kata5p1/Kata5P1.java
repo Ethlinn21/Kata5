@@ -21,6 +21,15 @@ public class Kata5P1 {
             System.out.println(rs.getInt(1));
             System.out.println(rs.getString(2));
         }
+        
+        query = "CREATE TABLE IF NOT EXISTS MAIL ('Id' INTEGER PRIMARY KEY AUTOINCREMENT , 'Mail' TEXT NOT NULL);";
+        st.execute(query);
+        
+        /*String mail = "mails.txt";
+        query = "INSERT INTO MAIL (Mail) VALUES ('" + mail + "')";
+        
+        query = "SELECT COUNT (*) from MAIL";*/
+        
     }
     
 }
